@@ -6,3 +6,4 @@ cat datos.txt |grep ".es" | wc -l
 cat datos.txt |sed 's/.com/.net/g' 
 cat datos.txt |awk -F ',' '$5 > 1 {print $1 "," $5}' | sort
 cat datos.txt |awk -F ',' '$3 > 40 {print $2 "," $3}' | sort
+cat datos.txt | awk -F, '{print $2 "," $5}' |sed 's/,/|/g' 
