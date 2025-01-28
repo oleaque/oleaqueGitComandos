@@ -4,3 +4,4 @@ cat datos.txt |wc -l
 cat datos.txt | grep -i "prog" | wc-l
 cat datos.txt |grep ".es" | wc -l
 cat datos.txt |sed 's/.com/.net/g' 
+cat datos.txt |awk -F ',' '$5 > 1 {print $1 "," $5}' | sort
