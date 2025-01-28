@@ -1,1 +1,2 @@
 cat datos.txt |grep "Juan" 
+cat datos.txt |cut -d ',' -f 5
