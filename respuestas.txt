@@ -3,3 +3,4 @@ cat datos.txt |grep -i "juan" datos.txt|cut -d ',' -f 4
 cat datos.txt |wc -l
 cat datos.txt | grep -i "prog" | wc-l
 cat datos.txt |grep ".es" | wc -l
+cat datos.txt |sed 's/.com/.net/g' 
